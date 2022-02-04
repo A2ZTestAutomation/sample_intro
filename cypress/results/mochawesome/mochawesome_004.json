@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-02-02T07:12:34.947Z",
+    "end": "2022-02-02T07:12:43.304Z",
+    "duration": 8357,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "641f141d-dbc6-413b-8452-77451f300dc4",
+      "title": "",
+      "fullFile": "cypress/integration/testScripts/a11ySample.spec.js",
+      "file": "cypress/integration/testScripts/a11ySample.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "04423fc7-cfdd-4785-ab18-94db897f1fb2",
+          "title": "Accessibility Testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "First Sample A11y Test",
+              "fullTitle": "Accessibility Testing First Sample A11y Test",
+              "timedOut": null,
+              "duration": 5081,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// cy.visit('https://www.cypress.io/features/')\ncy.visit('https://demo.opencart.com/');\ncy.injectAxe(); // cy.checkA11y()\n// cy.checkA11y('.input-group-btn > .btn')\n// cy.checkA11y({\n//     exclude: ['.input-group-btn > .btn',\n//     '.col-sm-3 > .btn-group']\n// })\ncy.checkA11y(null, null, terminalLog);",
+              "err": {
+                "message": "AssertionError: 7 accessibility violations were detected: expected 7 to equal 0",
+                "estack": "AssertionError: 7 accessibility violations were detected: expected 7 to equal 0\n    at Context.eval (https://demo.opencart.com/__cypress/tests?p=cypress\\support\\index.js:308:20)",
+                "diff": null
+              },
+              "uuid": "851a4975-c74b-47d7-a633-78e253c2dc54",
+              "parentUUID": "04423fc7-cfdd-4785-ab18-94db897f1fb2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "851a4975-c74b-47d7-a633-78e253c2dc54"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5081,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

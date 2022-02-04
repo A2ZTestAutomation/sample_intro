@@ -1,0 +1,12 @@
+{
+    "watchForFileChanges":true,
+    "defaultCommandTimeout":5000,
+    "pageLoadTimeout":90000,
+    "video":true,
+   	"screenshotsFolder":"TestResults/assets",
+	"reporter": "cypress-multi-reporters",
+	"reporterOptions": {
+	 "configFile": "reporter-config.json"
+	}  
+  
+}
